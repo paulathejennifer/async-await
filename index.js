@@ -141,4 +141,15 @@ loadPage()
 //5. Wait fetchPrice for 'GGOG' and print result
 //6. call the async function
 
+function fetchPrice(stockSymbol){
+    return new Promise(resolve => setTimeout(()=>{
+        resolve(`Price for ${stockSymbol} resolved`)
+    }))
 
+
+}
+
+async function getPrice() {
+    const price1 = await fetchPrice('AAPL')
+    const price2 = await fetchPrice('GOOG')
+}
