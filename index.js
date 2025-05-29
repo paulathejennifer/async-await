@@ -135,4 +135,10 @@ loadPage()
 //Question 5: Fetching stock prices
 //pseudocode
 //1. Define a function fetchPrice which takes in stockSymbol as a parameter
-//2. return a promise that resolves every two seconds as [stockSymbol] resolved
+//2. Return a promise that resolves every two seconds as [stockSymbol] resolved
+//3. Define async function getPrices()
+//4. Wait fetchPrice for 'AAPL' and print result
+//5. Wait fetchPrice for 'GGOG' and print result
+//6. call the async function
+
+
