@@ -151,5 +151,10 @@ function fetchPrice(stockSymbol){
 
 async function getPrice() {
     const price1 = await fetchPrice('AAPL')
+    console.log(price1);
+    
     const price2 = await fetchPrice('GOOG')
+    console.log(price2);
+    
 }
+getPrice()
