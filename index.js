@@ -118,6 +118,15 @@ async function loadPage(){
     await wait(1000);
 
 
-    log
+    console.log('Loading content...');
+    await wait(2000);
+
+    console.log('Loading footer...');
+    await wait(1000);
+
+
+    console.log('Page fully loaded.');  
+    
     
 }
+loadPage()
