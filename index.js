@@ -18,6 +18,7 @@ async function sendReminder(email){
     
 }
 
+
 sendReminder('paula@gmail.com')
 sendReminder('jane@gmail.com')
 sendReminder('kangethe@gmail.com')
@@ -55,7 +56,7 @@ async function tryLogin() {
             return;
         }
         catch(error){
-            console.log(`Attempt : ${i} ${error}`);
+            console.log(`Attempt ${i}: ${error}`);
             console.log(i);
             
             
@@ -65,3 +66,58 @@ async function tryLogin() {
     
 }
 tryLogin()
+
+//Question 3: COUNT DOWN TIMER USING SET INTERVAL
+//pseudocode
+//1. Set count at 5
+//2. Every one second
+//3. Print current value of count
+//4. Decrease count by one
+//5. if count is less than 0
+//6. Stop timer
+//7. Print 'Time's Up!'
+
+
+let count = 5;
+const interval = setInterval(()=>{
+    console.log(count);
+    count--;
+
+    if(count < 0){
+        clearInterval(interval);
+        console.log('Time is up!');
+        
+    }
+    
+}, 1000);
+
+
+//Question 4: Simulating page loading
+//pseudocode
+//1. Define function wait which takes milliseconds as it's parameter
+//2. Define async function loadpage()
+//3. print 'Loading header...'
+//4. wait 1 second
+//5. print 'Loading content...'
+//6. wait 2 seconds
+//7. print'Loading footer...'
+//8. wait 1 second
+
+//9. then print 'Page loading complete'
+
+//10. call the function
+
+
+function wait(milliseconds){
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+
+async function loadPage(){
+    console.log('Loading header...');
+    await wait(1000);
+
+
+    log
+    
+}
